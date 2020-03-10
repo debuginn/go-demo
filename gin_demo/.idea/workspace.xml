@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d9dd0d6-d1f2-40fb-a6c1-0133ebc8137e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gin_demo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +27,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -69,10 +66,22 @@
       <option name="presentableId" value="Default" />
       <updated>1583733856614</updated>
     </task>
+    <task id="LOCAL-00001" summary="使用mod搭建开发环境">
+      <created>1583745936256</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583745936256</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="使用mod搭建开发环境" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用mod搭建开发环境" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -87,10 +96,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="115" key="#Notifications/0.0.1440.900@0.0.1440.900" timestamp="1583740074200" />
+    <state x="301" y="0" key="CommitChangelistDialog2" timestamp="1583745935813">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="301" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1583745935813" />
     <state x="132" y="92" key="SettingsEditor" timestamp="1583745338144">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="132" y="92" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1583745338144" />
+    <state x="320" y="186" key="Vcs.Push.Dialog.v2" timestamp="1583745938280">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="186" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1583745938280" />
     <state x="502" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583745882358">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
