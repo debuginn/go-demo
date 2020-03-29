@@ -16,7 +16,7 @@ func sayHello(w http.ResponseWriter, r *http.Request) {
 	// 2、解析模版
 	t, err := template.ParseFiles("./hello.tmpl")
 	if err != nil {
-		fmt.Println("template import faild, err: %v", err)
+		fmt.Printf("Template import faild, err: %v \n", err)
 		return
 	}
 	u1 := User{
@@ -27,7 +27,7 @@ func sayHello(w http.ResponseWriter, r *http.Request) {
 	// 3、渲染模版
 	err = t.Execute(w, u1)
 	if err != nil {
-		fmt.Println("template error, err: %v", err)
+		fmt.Printf("template error, err: %v \n", err)
 	}
 }
 
@@ -36,7 +36,7 @@ func main() {
 	http.HandleFunc("/", sayHello)
 	err := http.ListenAndServe(":9000", nil)
 	if err != nil {
-		fmt.Println("HTTP Server Start faild, err: %v", err)
+		fmt.Printf("HTTP Server Start faild, err: %v \n", err)
 		return
 	}
 }

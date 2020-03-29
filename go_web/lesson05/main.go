@@ -19,7 +19,7 @@ func f1(w http.ResponseWriter, r *http.Request) {
 	// 解析模版
 	_, err := t.ParseFiles("./f.tmpl")
 	if err != nil {
-		fmt.Printf("paese template faild error: %v", err)
+		fmt.Printf("paese template faild error: %v \n", err)
 		return
 	}
 	name := "Debuginn"
@@ -34,7 +34,7 @@ func demo1(w http.ResponseWriter, r *http.Request) {
 	// 解析模版
 	_, err := t.ParseFiles("./t.tmpl", "./ul.tmpl")
 	if err != nil {
-		fmt.Printf("parse template file error:%v /n", err)
+		fmt.Printf("parse template file error:%v \n", err)
 		return
 	}
 	// 渲染模版
@@ -46,7 +46,7 @@ func main() {
 	http.HandleFunc("/demo1", demo1)
 	err := http.ListenAndServe(":9000", nil)
 	if err != nil {
-		fmt.Printf("Http Servertart faild, err:%v", err)
+		fmt.Printf("Http Servertart faild, err:%v \n", err)
 		return
 	}
 }
