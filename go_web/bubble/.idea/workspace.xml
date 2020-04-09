@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d185705c-8a4b-4b71-80c3-6e6b9c9740c9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/bubble.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/todo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/mysql.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson18" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/todo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/router/routers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/app.8eeeaf31.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/chunk-vendors.57db8905.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/element-icons.535877f5.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/element-icons.732389de.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/app.007f9690.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/chunk-vendors.ddcb6f91.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson18/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson18/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson18/.idea/lesson18.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson18/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson18/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson18/lesson18" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson18/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson18/static/css/app.8eeeaf31.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson18/static/css/chunk-vendors.57db8905.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson18/static/fonts/element-icons.535877f5.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson18/static/fonts/element-icons.732389de.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson18/static/js/app.007f9690.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson18/static/js/chunk-vendors.ddcb6f91.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson18/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../github.com/ugorji/go" beforeDir="false" afterPath="$PROJECT_DIR$/../../github.com/ugorji/go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gopkg.in/yaml.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../../gopkg.in/yaml.v2" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1aIeLYY2wV1IcLNVLwyjsYMGjIf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="go.sdk" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d185705c-8a4b-4b71-80c3-6e6b9c9740c9" name="Default Changelist" comment="" />
+      <created>1586427479660</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586427479660</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <proxy>https://goproxy.cn</proxy>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="502" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586440855169">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="502" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1586440855169" />
+  </component>
+</project>
