@@ -1,43 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d185705c-8a4b-4b71-80c3-6e6b9c9740c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/bubble.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/todo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/mysql.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson18" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/todo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/router/routers.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/app.8eeeaf31.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/chunk-vendors.57db8905.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/element-icons.535877f5.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/element-icons.732389de.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/app.007f9690.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/chunk-vendors.ddcb6f91.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson18/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson18/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson18/.idea/lesson18.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson18/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson18/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson18/lesson18" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson18/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson18/static/css/app.8eeeaf31.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson18/static/css/chunk-vendors.57db8905.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson18/static/fonts/element-icons.535877f5.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson18/static/fonts/element-icons.732389de.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson18/static/js/app.007f9690.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson18/static/js/chunk-vendors.ddcb6f91.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson18/templates/index.html" afterDir="false" />
+    <list default="true" id="d185705c-8a4b-4b71-80c3-6e6b9c9740c9" name="Default Changelist" comment="add file gin gorm study end">
       <change beforePath="$PROJECT_DIR$/../../github.com/ugorji/go" beforeDir="false" afterPath="$PROJECT_DIR$/../../github.com/ugorji/go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson18" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../gopkg.in/yaml.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../../gopkg.in/yaml.v2" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,18 +58,21 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="go.sdk" />
+    <property name="settings.editor.selected.configurable" value="net.vektah.codeglance.config.ConfigEntry" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -92,19 +87,73 @@
       <option name="presentableId" value="Default" />
       <updated>1586427479660</updated>
     </task>
+    <task id="LOCAL-00001" summary="add file gin gorm study end">
+      <created>1586440894242</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586440894242</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="add file gin gorm study end" />
+    <option name="LAST_COMMIT_MESSAGE" value="add file gin gorm study end" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
+    <environment>
+      <map>
+        <entry key="GOPROXY" value="https://goproxy.cn" />
+      </map>
+    </environment>
     <proxy>https://goproxy.cn</proxy>
   </component>
   <component name="WindowStateProjectService">
+    <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586497322838">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1440.900@0.0.1440.900" timestamp="1586497322838" />
+    <state x="301" y="0" key="CommitChangelistDialog2" timestamp="1586441130844">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="301" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1586441130844" />
+    <state x="221" y="89" key="SettingsEditor" timestamp="1586497691767">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1586497691767" />
+    <state x="320" y="186" key="Vcs.Push.Dialog.v2" timestamp="1586440900838">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="186" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1586440900838" />
     <state x="502" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586440855169">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
