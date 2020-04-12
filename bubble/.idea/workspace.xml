@@ -29,7 +29,6 @@
     <list default="true" id="d185705c-8a4b-4b71-80c3-6e6b9c9740c9" name="Default Changelist" comment="add file gin gorm study end">
       <change beforePath="$PROJECT_DIR$/../../github.com/ugorji/go" beforeDir="false" afterPath="$PROJECT_DIR$/../../github.com/ugorji/go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson18" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../gopkg.in/yaml.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../../gopkg.in/yaml.v2" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,6 +121,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -138,6 +138,10 @@
     <proxy>https://goproxy.cn</proxy>
   </component>
   <component name="WindowStateProjectService">
+    <state x="320" y="98" key="#Plugins" timestamp="1586671169954">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="98" key="#Plugins/0.0.1440.900@0.0.1440.900" timestamp="1586671169954" />
     <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586497322838">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
