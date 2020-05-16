@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>嵌套 template 语法</title>
+</head>
+<body>
+<h2>你好 {{ . }}</h2>
+<hr>
+{{ template "ul.tmpl"}}
+<hr>
+{{ template "ol.tmpl"}}
+</body>
+</html>
+{{/*通过 define 定义一个模版*/}}
+{{ define "ol.tmpl"}}
+    <ol>
+        <li>吃饭</li>
+        <li>睡觉</li>
+        <li>码代码</li>
+    </ol>
+{{ end }}
