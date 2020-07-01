@@ -17,6 +17,8 @@
         <method importPath="net" receiver="Conn" name="Close" />
         <method importPath="net" receiver="*UDPConn" name="Close" />
         <method importPath="database/sql" receiver="*DB" name="Close" />
+        <method importPath="database/sql" receiver="*Rows" name="Close" />
+        <method importPath="database/sql" receiver="*Stmt" name="Close" />
       </methods>
     </inspection_tool>
   </profile>
