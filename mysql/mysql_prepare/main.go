@@ -28,6 +28,7 @@ func initMySQL() (err error) {
 	return
 }
 
+// 预处理插入数据
 func prepareInsert() {
 	sqlStr := "INSERT INTO user(name, age) VALUES(?, ?)"
 	stmt, err := db.Prepare(sqlStr)
@@ -51,12 +52,82 @@ func prepareInsert() {
 
 	fmt.Printf("insert data success\n")
 }
+
+// 预处理更新数据
+func prepareUpdate() {
+	sqlStr := "UPDATE user SET age = ? WHERE id = ?"
+	stmt, err := db.Prepare(sqlStr)
+	if err != nil {
+		fmt.Printf("prepare sql failed, err:%v\n", err)
+		return
+	}
+	_, err = stmt.Exec(18, 2)
+	if err != nil {
+		fmt.Printf("exec failed, err:%v\n", err)
+		return
+	}
+	fmt.Printf("prepare update data success")
+}
+
+// 预处理查询数据
+func prepareQuery() {
+	sqlStr := "SELECT id,name,age FROM user WHERE id > ?"
+	stmt, err := db.Prepare(sqlStr)
+	if err != nil {
+		fmt.Printf("prepare sql failed, err:%v\n", err)
+		return
+	}
+	rows, err := stmt.Query(1)
+	if err != nil {
+		fmt.Printf("exec failed, err:%v\n", err)
+		return
+	}
+	defer rows.Close()
+
+	for rows.Next() {
+		var u user
+		err := rows.Scan(&u.id, &u.name, &u.age)
+		if err != nil {
+			fmt.Printf("scan data failed, err:%v\n", err)
+			return
+		}
+		fmt.Printf("id:%d, name:%s, age:%d\n", u.id, u.name, u.age)
+	}
+}
+
+// 预处理删除数据
+func prepareDelete() {
+	sqlStr := "DELETE FROM user WHERE id = ?"
+	stmt, err := db.Prepare(sqlStr)
+	if err != nil {
+		fmt.Printf("prepare sql failed, err:%v\n", err)
+		return
+	}
+	result, err := stmt.Exec(3)
+	n, err := result.RowsAffected()
+	if err != nil {
+		fmt.Printf("delete rows failed, err:%v\n", err)
+		return
+	}
+	if n > 0 {
+		fmt.Printf("delete data success")
+	} else {
+		fmt.Printf("delete data error")
+	}
+}
+
 func main() {
 	err := initMySQL()
 	if err != nil {
-		fmt.Println("init mysql failed, err%v\n", err)
+		fmt.Printf("init mysql failed, err%v\n", err)
 		return
 	}
 
-	prepareInsert()
+	//prepareInsert()
+
+	//prepareUpdate()
+
+	prepareQuery()
+
+	//repareDelete()
 }
