@@ -101,6 +101,97 @@ func deleteRow() {
 	fmt.Printf("delete data success, affected rows:%d\n", affectedRows)
 }
 
+// 使用 named 方法插入数据
+func insertNamedExec() {
+	sqlStr := "INSERT INTO user(name, age) VALUES(:name, :age)"
+	result, err := db.NamedExec(sqlStr, map[string]interface{}{
+		"name": "里斯",
+		"age":  18,
+	})
+	if err != nil {
+		fmt.Printf("named exec failed, err:%v\n", err)
+		return
+	}
+	insertId, err := result.LastInsertId()
+	if err != nil {
+		fmt.Printf("get last insert id failed, err:%v\n", err)
+		return
+	}
+	fmt.Printf("insert data success, id:%d\n", insertId)
+}
+
+// 绑定查询
+func selectNamedQuery() {
+	sqlStr := "SELECT id, name, age FROM user WHERE age = :age"
+	rows, err := db.NamedQuery(sqlStr, map[string]interface{}{
+		"age": 22,
+	})
+	if err != nil {
+		fmt.Printf("named query failed failed, err:%v\n", err)
+		return
+	}
+	defer rows.Close()
+	for rows.Next() {
+		var u user
+		if err := rows.StructScan(&u); err != nil {
+			fmt.Printf("struct sacn failed, err:%v\n", err)
+			continue
+		}
+		fmt.Printf("%#v\n", u)
+	}
+}
+
+// 事务操作
+func updateTransaction() (err error) {
+	tx, err := db.Begin()
+	if err != nil {
+		fmt.Printf("transaction begin failed, err:%v\n", err)
+		return err
+	}
+
+	defer func() {
+		if p := recover(); p != nil {
+			_ = tx.Rollback()
+			panic(p)
+		} else if err != nil {
+			fmt.Printf("transaction rollback")
+			_ = tx.Rollback()
+		} else {
+			err = tx.Commit()
+			fmt.Printf("transaction commit")
+			return
+		}
+	}()
+
+	sqlStr1 := "UPDATE user SET age = ? WHERE id = ? "
+	reuslt1, err := tx.Exec(sqlStr1, 18, 1)
+	if err != nil {
+		fmt.Printf("sql exec failed, err:%v\n", err)
+		return err
+	}
+	rows1, err := reuslt1.RowsAffected()
+	if err != nil {
+		fmt.Printf("affected rows is 0")
+		return
+	}
+	sqlStr2 := "UPDATE user SET age = ? WHERE id = ? "
+	reuslt2, err := tx.Exec(sqlStr2, 19, 5)
+	if err != nil {
+		fmt.Printf("sql exec failed, err:%v\n", err)
+		return err
+	}
+	rows2, err := reuslt2.RowsAffected()
+	if err != nil {
+		fmt.Printf("affected rows is 0\n")
+		return
+	}
+
+	if rows1 > 0 && rows2 > 0 {
+		fmt.Printf("update data success\n")
+	}
+	return
+}
+
 func main() {
 	if err := initMySQL(); err != nil {
 		panic(err)
@@ -108,6 +199,9 @@ func main() {
 	//queryRow()
 	//insertRow()
 	//updateRow()
-	deleteRow()
+	//deleteRow()
+	//insertNamedExec()
+	//selectNamedQuery()
 	queryMultiRow()
+	//_ = updateTransaction()
 }
