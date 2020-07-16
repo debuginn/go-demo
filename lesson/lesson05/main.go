@@ -43,7 +43,7 @@ func demo1(w http.ResponseWriter, r *http.Request) {
 }
 func main() {
 	http.HandleFunc("/", f1)
-	http.HandleFunc("/demo1", demo1)
+	http.HandleFunc("/topic_test", demo1)
 	err := http.ListenAndServe(":9000", nil)
 	if err != nil {
 		fmt.Printf("Http Servertart faild, err:%v \n", err)
