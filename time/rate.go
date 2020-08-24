@@ -82,8 +82,8 @@ func (lim *Limiter) Burst() int {
 // bursts of at most b tokens.
 func NewLimiter(r Limit, b int) *Limiter {
 	return &Limiter{
-		limit: r,
-		burst: b,
+		limit: r, // 放入桶的频率
+		burst: b, // 桶的大小
 	}
 }
 
@@ -320,7 +320,7 @@ func (lim *Limiter) reserveN(now time.Time, n int, maxFutureReserve time.Duratio
 	}
 
 	// 拿到截至 now 时间时
-	// 可以获取的令牌 tokens 数量及上一次拿走令牌的时间 last
+	// 可以获取的令牌 tokens 数量及上一次拿走令牌的时间 last time
 	now, last, tokens := lim.advance(now)
 
 	// 更新 tokens 数量

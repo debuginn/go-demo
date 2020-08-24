@@ -20,6 +20,7 @@
         <method importPath="database/sql" receiver="*Rows" name="Close" />
         <method importPath="database/sql" receiver="*Stmt" name="Close" />
         <method importPath="github.com/jmoiron/sqlx" receiver="*Rows" name="Close" />
+        <method importPath="io" receiver="ReadCloser" name="Close" />
       </methods>
     </inspection_tool>
   </profile>
