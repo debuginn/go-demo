@@ -10,14 +10,17 @@ type Lock struct {
 	c chan struct{}
 }
 
+// 创建 锁
 func newLock() Lock {
 	var l Lock
+	// l.c 创建一个 struct 类型通道
 	l.c = make(chan struct{}, 1)
 	l.c <- struct{}{}
 
 	return l
 }
 
+// 加锁
 func (l Lock) Lock() bool {
 	lockRes := false
 
@@ -30,6 +33,7 @@ func (l Lock) Lock() bool {
 	return lockRes
 }
 
+// 释放锁
 func (l Lock) Unlock() {
 	l.c <- struct{}{}
 }
