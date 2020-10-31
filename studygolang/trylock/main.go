@@ -49,6 +49,7 @@ func main() {
 
 		go func() {
 			defer wg.Done()
+			// 获取到锁执行操作，否则则加锁失败
 			if !l.Lock() {
 				println("lock failed")
 				return
