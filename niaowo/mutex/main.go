@@ -12,6 +12,7 @@ func main() {
 	// 确认辅助变量是否都执行完成
 	var wg sync.WaitGroup
 
+	// wg 添加数目要和 创建的协程数量保持一致
 	wg.Add(10)
 	for i := 0; i < 10; i++ {
 		go func() {
