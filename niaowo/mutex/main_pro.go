@@ -33,9 +33,9 @@ func main() {
 	var counter Counter
 
 	var wg sync.WaitGroup
-	wg.Add(10)
+	wg.Add(100)
 
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 100; i++ {
 		go func() {
 			defer wg.Done()
 			for j := 0; j < 1000; j++ {
@@ -45,5 +45,5 @@ func main() {
 	}
 	wg.Wait()
 
-	fmt.Printf("%d", counter.Count())
+	fmt.Printf("%d\n", counter.Count())
 }

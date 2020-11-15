@@ -13,11 +13,11 @@ func main() {
 	var wg sync.WaitGroup
 
 	// wg 添加数目要和 创建的协程数量保持一致
-	wg.Add(10)
-	for i := 0; i < 10; i++ {
+	wg.Add(100)
+	for i := 0; i < 100; i++ {
 		go func() {
 			defer wg.Done()
-			for j := 0; j < 10000; j++ {
+			for j := 0; j < 1000; j++ {
 				mu.Lock()
 				countNum++
 				mu.Unlock()
@@ -25,5 +25,5 @@ func main() {
 		}()
 	}
 	wg.Wait()
-	fmt.Printf("countNum: %d", countNum)
+	fmt.Printf("countNum: %d\n", countNum)
 }
