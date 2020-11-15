@@ -36,5 +36,4 @@ func main() {
 
 	// 所有准备就绪
 	log.Println("all goroutine ready... go")
-
 }
