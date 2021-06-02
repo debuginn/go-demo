@@ -14,7 +14,7 @@ func sayHello(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	// 3、渲染模版
-	err = t.Execute(w, "topic")
+	err = t.Execute(w, "topic05")
 	if err != nil {
 		fmt.Println("template error, err: %v", err)
 	}

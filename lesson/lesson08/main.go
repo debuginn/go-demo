@@ -31,7 +31,7 @@ func main() {
 	}
 	r.GET("/another_json", func(context *gin.Context) {
 		data := msg{
-			Name:    "topic",
+			Name:    "topic05",
 			Age:     20,
 			Message: "hello",
 		}
