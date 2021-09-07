@@ -18,7 +18,7 @@ func (d *delayJob) Run() {
 
 func main() {
 	c := cron.New()
-	_, _ = c.AddJob("@every 1s", cron.NewChain(cron.DelayIfStillRunning(cron.DefaultLogger)).Then(&delayJob{}))
+	_, _ = c.AddJob("@every 1s", cron.NewChain(cron.SkipIfStillRunning(cron.DefaultLogger)).Then(&delayJob{}))
 	c.Start()
 
 	time.Sleep(10 * time.Second)
