@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"sync"
 	"time"
-	//"time"
 )
 
 var counter int
