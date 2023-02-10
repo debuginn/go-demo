@@ -13,7 +13,6 @@ require (
 	github.com/andybalholm/brotli v1.0.4 // indirect
 	github.com/aymerick/douceur v0.2.0 // indirect
 	github.com/aymerick/raymond v2.0.3-0.20180322193309-b565731e1464+incompatible // indirect
-	github.com/chris-ramon/douceur v0.2.0 // indirect
 	github.com/eknkc/amber v0.0.0-20171010120322-cdade1c07385 // indirect
 	github.com/fatih/structs v1.1.0 // indirect
 	github.com/golang/protobuf v1.4.1 // indirect
@@ -30,7 +29,7 @@ require (
 	github.com/kataras/sitemap v0.0.5 // indirect
 	github.com/kataras/tunnel v0.0.1 // indirect
 	github.com/klauspost/compress v1.15.9 // indirect
-	github.com/microcosm-cc/bluemonday v1.0.3 // indirect
+	github.com/microcosm-cc/bluemonday v1.0.20 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421 // indirect
 	github.com/modern-go/reflect2 v0.0.0-20180701023420-4b7aa43c6742 // indirect
 	github.com/moul/http2curl v1.0.0 // indirect
