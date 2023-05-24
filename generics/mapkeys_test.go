@@ -15,3 +15,15 @@ func TestMapKeys(t *testing.T) {
 	a := MapKeys(mapA)
 	fmt.Printf("=======%+v\n", a)
 }
+
+func TestMapKeys1(t *testing.T) {
+
+	mapA := map[string]string{
+		"a": "a",
+		"b": "b",
+		"c": "c",
+	}
+
+	a := MapKeys(mapA)
+	fmt.Printf("=======%+v\n", a)
+}
