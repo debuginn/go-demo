@@ -1,6 +1,6 @@
 module github.com/debuginn/go-demo/iris/01readform
 
-go 1.19
+go 1.24
 
 require github.com/kataras/iris v0.0.2
 
@@ -28,7 +28,7 @@ require (
 	github.com/kataras/pio v0.0.8 // indirect
 	github.com/kataras/sitemap v0.0.5 // indirect
 	github.com/kataras/tunnel v0.0.1 // indirect
-	github.com/klauspost/compress v1.15.9 // indirect
+	github.com/klauspost/compress v1.18.7 // indirect
 	github.com/microcosm-cc/bluemonday v1.0.20 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421 // indirect
 	github.com/modern-go/reflect2 v0.0.0-20180701023420-4b7aa43c6742 // indirect
